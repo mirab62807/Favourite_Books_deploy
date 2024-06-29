@@ -1,0 +1,22 @@
+{% extends 'books/_base.html' %}
+
+<html>
+    <body>
+         {% block content %}
+        <h1> Taking variable from index function to index template </h1>
+        {% if allbooks %}
+        <ul>
+            {% for b in allbooks %}
+            <li>{{b | title}}</li>
+            {% endfor %}
+
+        </ul>
+        {% else %}
+        <p> No books to show as favourate </p>
+        {% endif %}
+
+        {% endblock %}
+
+        
+    </body>
+</html>

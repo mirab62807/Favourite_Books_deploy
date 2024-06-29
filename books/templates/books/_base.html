@@ -1,0 +1,15 @@
+{% load static %}
+<html>
+    <body>
+        <div>
+            <a href="{% url 'bb' %}"> All books </a>
+            <p></p>
+            <a href="{% url 'ab' %}"> Details of books </a>
+        </div>
+        {% block content %} 
+        
+        
+        {% endblock %}
+        <img style="width: 40%; height: 40%;" src="{% static 'books/mosque.jpg' %}" alt="about a starting pic">
+    </body>
+</html>
