@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/myDjangoEnv bash
 # exit on error
 
 set -o errexit
